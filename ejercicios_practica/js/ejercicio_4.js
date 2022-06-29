@@ -28,7 +28,18 @@ para que luego el sistema use esa variable "invidatos" para imprimir
 en consola la lista
 
 */
+let invitado1 = ""
+let invitado2 = ""
+let invitado3 = ""
+var invitados = ""
 
+function generarInvitados(){
+    invitado1 = String(prompt(`Ingrese el nombre del primer invitado/a.`)) + ", "
+    invitado2 = String(prompt(`Ingrese el nombre del segundo invitado/a.`)) + ", "
+    invitado3 = String(prompt(`Ingrese el nombre del tercer invitado/a.`)) + "."
+    invitados = invitado1 + invitado2 + invitado3
+    return invitados
+}
 // Definir y crear la función antes de esta llamada
 invitados = generarInvitados();
 console.log(`Mis invitados: ${invitados}`)
